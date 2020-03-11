@@ -1,0 +1,30 @@
+/* line 5, ../sass/aufgabe04.scss */
+.margindiv {
+  margin: 5px;
+}
+
+/* line 9, ../sass/aufgabe04.scss */
+.margindiv2 {
+  margin: 5px 10px;
+}
+
+/* line 13, ../sass/aufgabe04.scss */
+.margindiv3 {
+  margin: 5px 8px 10px;
+}
+
+/* line 17, ../sass/aufgabe04.scss */
+.margindiv4 {
+  margin: 5px 8px 10px 14px;
+}
+
+/* line 28, ../sass/aufgabe04.scss */
+.mobileinvisible {
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 28, ../sass/aufgabe04.scss */
+  .mobileinvisible {
+    display: block;
+  }
+}

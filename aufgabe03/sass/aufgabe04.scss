@@ -1,0 +1,33 @@
+@mixin margin ($top: null,$right:null,$bottom:null,$left:null) {
+    margin: $top, $right, $bottom, $left;
+}
+
+.margindiv{
+  @include margin(5px);
+}
+
+.margindiv2{
+  @include margin(5px 10px);
+}
+
+.margindiv3{
+  @include margin(5px 8px 10px);
+}
+
+.margindiv4{
+  @include margin(5px 8px 10px 14px);
+}
+
+
+@mixin breakpoint($breite) {
+  @media (min-width: $breite) {
+    @content
+  }
+}
+
+.mobileinvisible {
+  display: none;
+  @include breakpoint(990px){
+    display: block;
+  }
+}
